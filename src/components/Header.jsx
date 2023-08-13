@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   const isActive = (path) => {
-    console.log("path: ", location.pathname);
+    // console.log("path: ", location.pathname);
     return location.pathname === path;
   };
 

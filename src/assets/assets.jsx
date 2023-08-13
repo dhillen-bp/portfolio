@@ -9,7 +9,15 @@ import CodeigneterIcon from "./icons/tech-icons/codeigneter-icon.png";
 import CssIcon from "./icons/tech-icons/css.png";
 import ExpressIcon from "./icons/tech-icons/express-js.png";
 import FirebaseIcon from "./icons/tech-icons/Firebase_Logo.png";
+import GCPIcon from "./icons/tech-icons/gcp.png";
+import HapiIcon from "./icons/tech-icons/hapi.png";
+import HTMLIcon from "./icons/tech-icons/html-5.png";
 import JavaIcon from "./icons/tech-icons/java-icon.png";
+import JavascriptIcon from "./icons/tech-icons/js.png";
+import LaravelIcon from "./icons/tech-icons/laravel.png";
+import MySQLIcon from "./icons/tech-icons/mysql.png";
+import PHPIcon from "./icons/tech-icons/php.png";
+import TailwindIcon from "./icons/tech-icons/tailwind-css.png";
 
 // Certificates
 import GitCert from "./img/certificates/belajar-dasar-git-dengan-github.png";
@@ -31,7 +39,15 @@ export {
   CssIcon,
   ExpressIcon,
   FirebaseIcon,
+  GCPIcon,
+  HapiIcon,
+  HTMLIcon,
   JavaIcon,
+  JavascriptIcon,
+  LaravelIcon,
+  MySQLIcon,
+  PHPIcon,
+  TailwindIcon,
   // Certificates
   GitCert,
   ProgrammingLogicCert,

@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { MyPhoto } from "../assets/assets";
+import Skills from "./Skills";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
               className="border-2 rounded-md border-green-300"
             />
           </div>
-          <div className="py-5 md:col-span-2 grid md:items-stretch">
+          <div className="py-5 md:col-span-2 grid md:items-center">
             <h2 className="text-xl text-center font-semibold">
               Dhillen Brahmantya Pradifta
             </h2>
@@ -73,21 +74,21 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-green-300">
-              <h2 className="text-center text-xl font-semibold border-b border-green-600">
+            <div className="bg-green-300 rounded-md">
+              <h2 className="text-center text-xl font-semibold border-b border-green-600 py-2">
                 Social Media Profile
               </h2>
-              <div className="m-auto shadow-md rounded-md flex my-2 justify-around p-5">
+              <div className="m-auto shadow-md rounded-md flex justify-around px-5 py-2">
                 <a
                   href=""
-                  className="w-7 rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                 >
                   <InstagramIcon />
                 </a>
                 <a
                   href="https://github.com/dhillen-bp"
                   target="_blank"
-                  className="w-7 rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
                 >
                   <GithubIcon />
@@ -95,7 +96,7 @@ export default function Home() {
                 <a
                   href="https://www.linkedin.com/in/dhillen-brahmantya-pradifta/"
                   target="_blank"
-                  className="w-7 rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
                 >
                   <LinkedInIcon />
@@ -103,7 +104,7 @@ export default function Home() {
                 <a
                   href="https://twitter.com/dhillenbp"
                   target="_blank"
-                  className="w-7 rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
                 >
                   <TwitterIcon />
@@ -111,7 +112,7 @@ export default function Home() {
                 <a
                   href="https://wa.me/6285600643275"
                   target="_blank"
-                  className="w-7 rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
                 >
                   <WhatsAppIcon />
@@ -140,61 +141,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="mt-10 h-full w-full">
-        <h1 className="text-2xl font-bold border-b-2 border-green-500 pb-1 mb-5">
-          Skills & Tools
-        </h1>
-        <div className="w-full grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-10 justify-around">
-          <div className="shadow-md rounded-md p-2 grid grid-cols-2 justify-center items-center bg-green-300">
-            <img
-              src="./img/icons/tech-icons/html-5.png"
-              alt=""
-              className="w-10 ml-5"
-            />
-            <p className="font-bold">HTML</p>
-          </div>
-          <div className="shadow-md rounded-md p-2 grid grid-cols-2 justify-around items-center bg-green-300">
-            <img
-              src="./img/icons/tech-icons/css.png"
-              alt=""
-              className="w-10 ml-5"
-            />
-            <p className="font-bold">CSS</p>
-          </div>
-          <div className="shadow-md rounded-md p-2 grid grid-cols-2 justify-around items-center bg-green-300">
-            <img
-              src="./img/icons/tech-icons/js.png"
-              alt=""
-              className="w-10 ml-5 justify-center"
-            />
-            <p className="font-bold">JS</p>
-          </div>
-          <div className="shadow-md rounded-md p-2 grid grid-cols-2 justify-around items-center bg-green-300">
-            <img
-              src="./img/icons/tech-icons/php.png"
-              alt=""
-              className="w-10 ml-5"
-            />
-            <p className="font-bold">PHP</p>
-          </div>
-          <div className="shadow-md rounded-md p-2 grid grid-cols-2 justify-around items-center bg-green-300">
-            <img
-              src="./img/icons/tech-icons/bootstrap.png"
-              alt=""
-              className="w-10 ml-5"
-            />
-            <p className="font-bold">Bootstrap</p>
-          </div>
-          <div className="shadow-md rounded-md p-2 grid grid-cols-2 justify-around items-center bg-green-300 hover:bg-green-500">
-            <img
-              src="./img/icons/tech-icons/tailwind-css.png"
-              alt=""
-              className="w-10 ml-5"
-            />
-            <p className="font-bold">Tailwind</p>
-          </div>
-        </div>
-      </div>
+      <Skills />
     </>
   );
 }
