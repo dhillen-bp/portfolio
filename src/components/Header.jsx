@@ -31,21 +31,25 @@ export default function Header() {
       <nav className="hidden md:flex">
         <ul className="flex space-x-8 font-semibold">
           {navLinks.map((link) => (
-            <li key={link.path}>
+            <li key={link.path} className="group">
               <a
                 onClick={() => {
                   navigate(link.path);
                 }}
-                className={`cursor-pointer pb-1 ${
-                  isActive(link.path) ? "border-b" : "border-b-0"
-                } hover:font-bold hover:border-b`}
+                className={`group/a cursor-pointer relative pb-1 hover:font-bold`}
               >
                 {link.text}
+                <span
+                  className={`absolute left-0 bottom-0 w-full h-0.5 bg-slate-50 transform origin-bottom-left transition-transform duration-300 group-hover/a:scale-x-100 ${
+                    isActive(link.path) ? "scale-x-100" : "scale-x-0"
+                  }`}
+                ></span>
               </a>
             </li>
           ))}
         </ul>
       </nav>
+
       {/* <!-- Hamburger menu for small screens --> */}
       <div className="md:hidden relative">
         <button
