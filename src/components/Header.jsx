@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-const base = import.meta.env.VITE_BASE || "/";
+const base = "/portfolio";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -17,9 +17,9 @@ export default function Header() {
   };
 
   const navLinks = [
-    { path: `${base}`, text: "Home" },
-    { path: `${base}education`, text: "Education" },
-    { path: `${base}project`, text: "Project" },
+    { path: `${base}/`, text: "Home" },
+    { path: `${base}/education`, text: "Education" },
+    { path: `${base}/project`, text: "Project" },
   ];
 
   return (
