@@ -10,6 +10,7 @@ export default function Footer() {
         <a
           href="./src/assets/docs/Resume-Dhillen-Brahmantya-Pradifta.pdf"
           target="_blank"
+          rel="noreferrer"
           className="ml-1 font-bold text-white hover:underline"
         >
           Resume
