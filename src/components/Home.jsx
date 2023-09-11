@@ -1,16 +1,32 @@
 import { Helmet } from "react-helmet";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GithubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { MyPhoto } from "../assets/assets";
+import WorkIcon from "@mui/icons-material/Work";
+import { Photo } from "../assets/assets";
 import Skills from "./Skills";
+import Typed from "typed.js";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 export default function Home() {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Web Developer", "Software Engineer"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -21,59 +37,24 @@ export default function Home() {
       </h1>
       <div className="w-full mx-auto">
         <div className="mx-auto grid md:grid-cols-3 md:gap-20 items-center">
-          <div className="shadow-md rounded-md overflow-hidden md:col-span-1 md:w-full">
+          <div className="shadow-md mx-20 md:mx-0 rounded-full overflow-hidden md:col-span-1 md:w-60">
             <img
-              src={MyPhoto}
+              src={Photo}
               alt="MyPhoto"
-              className="border-2 rounded-md border-green-300"
+              className="w-full h-full border-2 rounded-full border-green-300"
             />
           </div>
-          <div className="py-5 md:col-span-2 grid md:items-center">
+          <div className="py-5 grid md:col-span-2 items-center gap-5">
             <h2 className="text-xl text-center font-semibold">
               Dhillen Brahmantya Pradifta
             </h2>
-
-            <div className="w-full my-5">
-              <div className="grid gap-5 grid-cols-4 px-5 w-full 0">
-                <div className="col-span-1 flex items-center justify-start h-full">
-                  <div className="rounded-full p-3 bg-green-300 shadow-sm">
-                    <LocationOnIcon />
-                  </div>
-                  <p className="font-semibold ml-2 hidden md:block">Location</p>
-                </div>
-
-                <p className="col-span-3 font-semibold text-md w-full flex items-center">
-                  Karangwuni RT 03/Rw 03, Polokarto, Sukoharjo, Jawa Tengah
-                </p>
-              </div>
-              <div className="grid gap-5 grid-cols-4 my-5 px-5 w-full">
-                <div className="col-span-1 flex items-center justify-start h-full">
-                  <div className="rounded-full p-3 bg-green-300 shadow-sm">
-                    <PhoneIcon />
-                  </div>
-                  <p className="font-semibold ml-2 hidden md:block">Phone</p>
-                </div>
-
-                <p className="col-span-3 font-semibold text-md w-full flex items-center">
-                  085600643275
-                </p>
-              </div>
-              <div className="grid gap-5 grid-cols-4 my-5 px-5 w-full">
-                <div className="col-span-1 flex items-center justify-start h-full">
-                  <div className="rounded-full p-3 bg-green-300 shadow-sm">
-                    <EmailIcon />
-                  </div>
-                  <p className="font-semibold ml-2 hidden md:block md:text-start">
-                    Email
-                  </p>
-                </div>
-
-                <p className="col-span-3 font-semibold text-md w-full flex items-center">
-                  dhillen.mutu@gmail.com
-                </p>
-              </div>
+            <div className="m-auto items-center">
+              <WorkIcon />
+              <div
+                className="inline font-semibold justify-center text-lg text-green-700 pl-2"
+                ref={el}
+              ></div>
             </div>
-
             <div className="bg-green-300 rounded-md">
               <h2 className="text-center text-xl font-semibold border-b border-green-600 py-2">
                 Social Media Profile

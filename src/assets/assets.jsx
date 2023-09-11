@@ -1,5 +1,6 @@
 // Images
 import MyPhoto from "./img/photo.jpg";
+import Photo from "./img/my-photo.jpg";
 import AmikomSka from "./img/amikom-ska.jpg";
 
 // Icons
@@ -40,6 +41,7 @@ import ProjectMernBlog from "./img/project/project-mern-blog.png";
 
 export {
   MyPhoto,
+  Photo,
   AmikomSka,
   // Icons
   AdminlteIcon,
