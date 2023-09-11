@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import MailIcon from "@mui/icons-material/Mail";
 import GithubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -41,17 +41,17 @@ export default function Home() {
             <img
               src={Photo}
               alt="MyPhoto"
-              className="w-full h-full border-2 rounded-full border-green-300"
+              className="w-full h-full border-4 rounded-full border-green-500"
             />
           </div>
           <div className="py-5 grid md:col-span-2 items-center gap-5">
-            <h2 className="text-xl text-center font-semibold">
+            <h2 className="text-2xl text-center font-semibold">
               Dhillen Brahmantya Pradifta
             </h2>
             <div className="m-auto items-center">
               <WorkIcon />
               <div
-                className="inline font-semibold justify-center text-lg text-green-700 pl-2"
+                className="inline font-semibold justify-center text-xl text-green-700 pl-2"
                 ref={el}
               ></div>
             </div>
@@ -61,10 +61,10 @@ export default function Home() {
               </h2>
               <div className="m-auto shadow-md rounded-md flex justify-around px-5 py-2">
                 <a
-                  href=""
+                  href="mailto:dhillenbp@gmail.com"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                 >
-                  <InstagramIcon />
+                  <MailIcon />
                 </a>
                 <a
                   href="https://github.com/dhillen-bp"
@@ -109,11 +109,11 @@ export default function Home() {
           </h3>
           <p className="border-b border-green-600 pb-2">
             A passionate <b>informatics student</b> with knowledge of
-            <b>web development</b>
+            <b> web development </b>
             and <b>cloud computing</b>. I am currently studying in the Bachelor
             of Informatics program, specializing in software engineering. Have
             the ability to build dynamic websites with <b>PHP</b> and
-            <b>NodeJS</b>
+            <b> NodeJS </b>
             technology. Have an understanding of cloud computing concepts,
             especially the implementation of serverless services. I am very
             enthusiastic to continue learning and applying my skills in this

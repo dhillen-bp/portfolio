@@ -1,38 +1,17 @@
 import {
   BootstrapIcon,
   CodeigneterIcon,
-  CssIcon,
   ExpressIcon,
   FirebaseIcon,
   GCPIcon,
   HapiIcon,
-  HTMLIcon,
-  // JavaIcon,
-  JavascriptIcon,
   LaravelIcon,
   MongoDBIcon,
   MySQLIcon,
-  PHPIcon,
   TailwindIcon,
 } from "../assets/assets";
 
 const skillsData = [
-  {
-    imageSrc: { HTMLIcon },
-    label: "HTML",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    imageSrc: { CssIcon },
-    label: "CSS",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    imageSrc: { JavascriptIcon },
-    label: "Javascript",
-    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  { imageSrc: { PHPIcon }, label: "PHP", link: "https://www.php.net/docs.php" },
   {
     imageSrc: { BootstrapIcon },
     label: "Bootstrap",
@@ -77,7 +56,7 @@ export default function Skills() {
   return (
     <div className="mt-10 h-full w-full mb-5">
       <h1 className="text-2xl font-bold border-b-2 border-green-500 pb-1 mb-5">
-        Skills & Tools
+        Favorite Tech Stack
       </h1>
       <div className="w-full grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 justify-around items-center">
         {skillsData.map((skill, index) => (

@@ -20,6 +20,10 @@ export default function Header() {
     { path: `${base}/`, text: "Home" },
     { path: `${base}/education`, text: "Education" },
     { path: `${base}/project`, text: "Project" },
+    {
+      path: `Resume`,
+      text: "Resume",
+    },
   ];
 
   return (
@@ -35,7 +39,14 @@ export default function Header() {
             <li key={link.path} className="group">
               <a
                 onClick={() => {
-                  navigate(link.path);
+                  if (link.path === "Resume") {
+                    window.open(
+                      "https://drive.google.com/file/d/1OgL4VpxarWdrgz-1uXVJJyPSPnTB9b8h/view?usp=drive_link",
+                      "_blank"
+                    );
+                  } else {
+                    navigate(link.path);
+                  }
                 }}
                 className={`group/a cursor-pointer relative pb-1 hover:font-bold`}
               >
