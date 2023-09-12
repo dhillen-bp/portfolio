@@ -71,9 +71,9 @@ export default function Header() {
           }`}
           onClick={toggleMenu}
         >
-          <div className="w-6 h-[3px] bg-white"></div>
-          <div className="w-6 h-[3px] mt-1 bg-white"></div>
-          <div className="w-6 h-[3px] mt-1 bg-white"></div>
+          <div className="w-6 h-[3px] bg-white dark:bg-white"></div>
+          <div className="w-6 h-[3px] mt-1 bg-white dark:bg-white"></div>
+          <div className="w-6 h-[3px] mt-1 bg-white dark:bg-white"></div>
         </button>
         <div
           id="dropdownMenu"
