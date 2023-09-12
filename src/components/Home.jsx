@@ -61,7 +61,7 @@ export default function Home() {
               </h2>
               <div className="m-auto shadow-md rounded-md flex justify-around px-5 py-2">
                 <a
-                  href="mailto:dhillenbp@gmail.com"
+                  href="mailto:dhillenbp20@gmail.com"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                 >
                   <MailIcon />

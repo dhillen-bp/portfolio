@@ -11,6 +11,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import "./style.css";
 
 const projects = [
   {
@@ -28,7 +29,7 @@ const projects = [
     desc: "Sistem Penilaian Kinerja Dosen atau SPKD adalah sistem yang dibuat untuk melakukan penilaian dosen dengan menghasilkan nilai (rating) tiap dosen dari kuesioner yang diisi oleh mahasiswa.",
   },
   {
-    title: "Idekita:Platform Crowdsourcing",
+    title: "Idekita: Crowdsourcing Platform",
     image: ProjectIdekita,
     techStack: ["Hapi.js", "MySQL", "Firebase", "GCP"],
     link: "https://github.com/idekita",
@@ -143,6 +144,7 @@ export default function Project() {
             overflow: "auto",
           },
         }}
+        className="project-modal bg-slate-50 focus:outline-0 n"
       >
         {selectedProjectIndex !== null && (
           <div className="text-center">
@@ -154,7 +156,7 @@ export default function Project() {
               <CloseIcon className="text-red-700 " fontSize="medium" />
             </div>
 
-            <h2 className="font-bold my-5">
+            <h2 className="font-bold my-5 pt-5 md:pt-3">
               {projects[selectedProjectIndex].title}
             </h2>
             <div className="px-5 ">
@@ -177,14 +179,20 @@ export default function Project() {
             </div>
             <div
               onClick={showPreviousProject}
-              className="absolute left-0 p-2 cursor-pointer"
+              className={`absolute left-0 p-2 cursor-pointer ${
+                selectedProjectIndex === 0 ? "text-slate-500" : ""
+              }`}
             >
               <NavigateBeforeIcon className="text-3xl" fontSize="large" />
               <span className="text-sm font-bold">Previous</span>
             </div>
             <div
               onClick={showNextProject}
-              className="absolute right-0 p-2 cursor-pointer"
+              className={`absolute right-0 p-2 cursor-pointer ${
+                selectedProjectIndex === projects.length - 1
+                  ? "text-slate-500"
+                  : ""
+              }`}
             >
               <span className="text-sm font-bold">Next</span>
               <NavigateNextIcon fontSize="large" />
