@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="bg-green-300 rounded-md">
               <h2 className="text-center text-xl font-semibold border-b border-green-600 py-2">
-                Social Media Profile
+                Let&apos;s Connect
               </h2>
               <div className="m-auto shadow-md rounded-md flex justify-around px-5 py-2">
                 <a
@@ -69,13 +69,13 @@ export default function Home() {
                 <a
                   href="https://github.com/dhillen-bp"
                   target="_blank"
-                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 md:hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
                 >
                   <GithubIcon />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/dhillen-brahmantya-pradifta/"
+                  href="https://www.linkedin.com/in/dhillen-bp/"
                   target="_blank"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
@@ -91,9 +91,9 @@ export default function Home() {
                   <TwitterIcon />
                 </a>
                 <a
-                  href="https://wa.me/6285600643275"
+                  // href="https://wa.me/6285600643275"
                   target="_blank"
-                  className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
+                  className="w-7 flex justify-center items-center cursor-pointer rounded-full md:w-10 md:p-2 hover:bg-green-500 hover:scale-110"
                   rel="noopener noreferrer"
                 >
                   <WhatsAppIcon />
@@ -117,8 +117,7 @@ export default function Home() {
             technology. Have an understanding of cloud computing concepts,
             especially the implementation of serverless services. I am very
             enthusiastic to continue learning and applying my skills in this
-            field. Seeking internships or part-time opportunities to gain
-            practical experience and contribute to innovative projects.
+            field.
           </p>
         </div>
       </div>

@@ -25,14 +25,13 @@ export default function Education() {
                 <img src={AmikomSka} alt="Amikom-Surakarta-Photo" />
               </a>
             </div>
-            <div className="col-span-1 justify-center p-3">
-              <p className="text-md font-semibold hover:underline">
-                STMIK AMIKOM SURAKARTA
-              </p>
+            <div className="col-span-1 justify-center p-3 text-center">
+              <p className="text-sm font-bold">STMIK AMIKOM SURAKARTA</p>
               <p className="text-sm font-semibold my-2">
                 Bachelor Degree in Informatics - S.Kom.
               </p>
-              <p className="text-sm">2020-Present</p>
+              <p className="text-sm font-semibold">2020-Present</p>
+              <p className="text-sm font-bold my-2">3.95 GPA</p>
             </div>
           </div>
         </div>

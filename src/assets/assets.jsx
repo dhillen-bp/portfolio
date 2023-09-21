@@ -31,6 +31,7 @@ import ProjectSPKD from "./img/project/project-spkd.png";
 import ProjectNBSiswa from "./img/project/nb-siswa.png";
 import ProjectIdekita from "./img/project/idekita.png";
 import ProjectMernBlog from "./img/project/project-mern-blog.png";
+import ProjectKenaMental from "./img/project/project-kenamental.png";
 
 export {
   MyPhoto,
@@ -62,4 +63,5 @@ export {
   ProjectNBSiswa,
   ProjectIdekita,
   ProjectMernBlog,
+  ProjectKenaMental,
 };

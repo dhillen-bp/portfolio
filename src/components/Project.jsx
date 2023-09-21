@@ -6,6 +6,7 @@ import {
   ProjectNBSiswa,
   ProjectIdekita,
   ProjectMernBlog,
+  ProjectKenaMental,
 } from "../assets/assets";
 import CloseIcon from "@mui/icons-material/Close";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -42,7 +43,14 @@ const projects = [
     image: ProjectMernBlog,
     techStack: ["React", "Express", "MongoDB"],
     link: "https://github.com/dhillen-bp/simple-blog",
-    desc: "A simple blog with MERN Stack",
+    desc: "A simple blog built using MERN Stack (MongoDB, Express.js, React, Node.js) and integrating Firebase Authentication as a user authentication system.",
+  },
+  {
+    title: "Kena-Mental",
+    image: ProjectKenaMental,
+    techStack: ["Laravel", "MySQL"],
+    link: "https://github.com/dhillen-bp/kena-mental",
+    desc: "Kena-Mental is a web platform created to simulate booking an online psychologist consultation. The platform is designed using Laravel, a powerful and efficient PHP framework. Through Kena-Mental, users can book a consultation with a psychologist online. The system enables users to choose a time according to their availability and select a psychologist that matches their needs.",
   },
 ];
 
@@ -156,7 +164,7 @@ export default function Project() {
               <CloseIcon className="text-red-700 " fontSize="medium" />
             </div>
 
-            <h2 className="font-bold my-5 pt-5 md:pt-3">
+            <h2 className="font-bold text-center px-5 my-5 pt-5 md:pt-3">
               {projects[selectedProjectIndex].title}
             </h2>
             <div className="px-5 ">

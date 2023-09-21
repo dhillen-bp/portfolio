@@ -1,7 +1,5 @@
 import {
   GitCert,
-  ProgrammingLogicCert,
-  BasicProgramCert,
   WebBasic,
   JavascriptBasic,
   BackendBeginner,
@@ -39,18 +37,6 @@ const certificatesData = [
     imageSrc: { GitCert },
     label: `Belajar Dasar Git dengan GitHub - Dicoding`,
     link: "https://www.dicoding.com/certificates/N9ZO4Q2DDZG5",
-  },
-  {
-    imageSrc: { ProgrammingLogicCert },
-    label: `Pengenalan ke Logika Pemrograman (Programming Logic 101) -
-  Dicoding`,
-    link: "https://www.dicoding.com/certificates/JLX1LK6QNX72",
-  },
-  {
-    imageSrc: { BasicProgramCert },
-    label: `Memulai Dasar Pemrograman untuk Menjadi Pengembang Software -
-  Dicoding`,
-    link: "https://www.dicoding.com/certificates/72ZD9MNQQPYW",
   },
 ];
 

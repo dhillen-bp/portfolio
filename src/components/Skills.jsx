@@ -30,10 +30,10 @@ const skillsData = [
   { imageSrc: { LaravelIcon }, label: "Laravel", link: "https://laravel.com/" },
   {
     imageSrc: { ExpressIcon },
-    label: "Express.js",
+    label: "Express",
     link: "https://expressjs.com/",
   },
-  { imageSrc: { HapiIcon }, label: "Hapi.js", link: "https://hapi.dev/" },
+  { imageSrc: { HapiIcon }, label: "hapi", link: "https://hapi.dev/" },
   { imageSrc: { MySQLIcon }, label: "MySQL", link: "https://www.mysql.com/" },
   {
     imageSrc: { MongoDBIcon },
