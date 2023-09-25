@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { AmikomSka } from "../assets/assets";
 import Certificates from "./Certificates";
 
 export default function Education() {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Education</title>
       </Helmet>
@@ -38,6 +38,6 @@ export default function Education() {
       </div>
 
       <Certificates />
-    </>
+    </HelmetProvider>
   );
 }

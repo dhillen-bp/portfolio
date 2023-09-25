@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import MailIcon from "@mui/icons-material/Mail";
 import GithubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Home</title>
       </Helmet>
@@ -122,6 +122,6 @@ export default function Home() {
         </div>
       </div>
       <Skills />
-    </>
+    </HelmetProvider>
   );
 }
