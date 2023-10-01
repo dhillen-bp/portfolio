@@ -78,30 +78,34 @@ export default function Home() {
                 <a
                   href="mailto:dhillenbp20@gmail.com"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 md:hover:bg-green-500 hover:scale-110 transform transition-transform"
+                  aria-label="Email me"
                 >
-                  <MailIcon alt="Email" />
+                  <MailIcon />
                 </a>
                 <a
                   href="https://github.com/dhillen-bp"
                   target="_blank"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 md:hover:bg-green-500 hover:scale-110 transform transition-transform"
                   rel="noopener noreferrer"
+                  aria-label="Visit my GitHub profile"
                 >
-                  <GithubIcon alt="Github" />
+                  <GithubIcon />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/dhillen-bp/"
                   target="_blank"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 md:hover:bg-green-500 hover:scale-110 transform transition-transform"
                   rel="noopener noreferrer"
+                  aria-label="Visit my LinkedIn profile"
                 >
-                  <LinkedInIcon alt="LinkeIn" />
+                  <LinkedInIcon />
                 </a>
                 <a
                   href="https://twitter.com/dhillenbp"
                   target="_blank"
                   className="w-7 flex justify-center items-center rounded-full md:w-10 md:p-2 md:hover:bg-green-500 hover:scale-110 transform transition-transform"
                   rel="noopener noreferrer"
+                  aria-label="Visit my Twitter profile"
                 >
                   <TwitterIcon alt="Twitter" />
                 </a>
@@ -109,6 +113,7 @@ export default function Home() {
                   target="_blank"
                   className="w-7 flex justify-center items-center cursor-pointer rounded-full md:w-10 md:p-2 md:hover:bg-green-500 hover:scale-110 transform transition-transform"
                   rel="noopener noreferrer"
+                  aria-label="Share this link"
                   onClick={copyToClipboard}
                 >
                   <ShareIcon alt="Share" />
