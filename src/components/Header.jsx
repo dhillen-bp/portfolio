@@ -52,21 +52,22 @@ export default function Header() {
         </a>
       </div>
       <button
-        className={`flex p-1 w-14 md:w-16 rounded-2xl justify-between ${
-          isDarkMode ? "bg-slate-800" : "bg-slate-50"
+        className={`flex p-1 w-14 md:w-16 rounded-full justify-between ${
+          isDarkMode ? "bg-slate-50" : "bg-slate-800"
         } transition-all duration-150 ease-in-out`}
         onClick={toggleDarkMode}
         aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       >
         <LightModeIcon
           className={` ${
-            isDarkMode ? "hidden" : "inline-block"
-          } w-4 h-4 md:w-6 md:h-6 text-slate-50`}
+            isDarkMode ? " d-none" : ""
+          } bg-white rounded-full py-1 text-slate-800 `}
         />
+        <div></div>
         <DarkModeIcon
           className={` ${
-            !isDarkMode ? "hidden" : "inline-block"
-          } w-4 h-4 md:w-6 md:h-6 text-slate-800`}
+            isDarkMode ? "" : " d-none"
+          } bg-slate-950 rounded-full py-1 right-0 text-slate-50 `}
         />
       </button>
       <nav className="hidden md:flex">
