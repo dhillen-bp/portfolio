@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 const base = "/portfolio";
 
 export default function Header() {
@@ -7,6 +9,7 @@ export default function Header() {
   const location = useLocation();
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -14,6 +17,21 @@ export default function Header() {
 
   const isActive = (path) => {
     return location.pathname === path;
+  };
+
+  useEffect(() => {
+    setIsDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !isDarkMode;
+    setIsDarkMode(newDarkMode);
+
+    // Menyimpan preferensi tema pada localStorage
+    localStorage.setItem("darkMode", newDarkMode.toString());
+
+    // Mengganti kelas CSS pada elemen body
+    document.body.classList.toggle("dark", newDarkMode);
   };
 
   const navLinks = [
@@ -33,6 +51,15 @@ export default function Header() {
           Dhillen
         </a>
       </div>
+      <button
+        className={`flex p-1 w-16 rounded-2xl justify-between ${
+          isDarkMode ? "bg-slate-800" : "bg-slate-50"
+        } transition-all duration-150 ease-in-out`}
+        onClick={toggleDarkMode}
+      >
+        <LightModeIcon className="text-slate-800" />{" "}
+        <DarkModeIcon className="text-slate-50" />
+      </button>
       <nav className="hidden md:flex">
         <ul className="flex space-x-8 font-semibold">
           {navLinks.map((link) => (
@@ -41,7 +68,7 @@ export default function Header() {
                 onClick={() => {
                   if (link.path === "Resume") {
                     window.open(
-                      "https://drive.google.com/file/d/1OgL4VpxarWdrgz-1uXVJJyPSPnTB9b8h/view?usp=drive_link",
+                      "https://drive.google.com/file/d/12OJvq1nbcX82BgRIqQUckivsZt5tEuOd/view?usp=drive_link",
                       "_blank"
                     );
                   } else {

@@ -56,7 +56,7 @@ export default function Skills() {
   return (
     <div className="mt-10 h-full w-full mb-5">
       <h1 className="text-2xl font-bold border-b-2 border-green-500 pb-1 mb-5">
-        Favorite Tech Stack
+        Tech Stack
       </h1>
       <div className="w-full grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 justify-around items-center">
         {skillsData.map((skill, index) => (
@@ -65,7 +65,7 @@ export default function Skills() {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className={`cursor-pointer shadow-md rounded-md  h-[3.25rem] bg-green-300 flex justify-center items-center py-2 space-x-4 hover:bg-green-500`}
+            className={`cursor-pointer shadow-md rounded-md  h-[3.25rem] bg-green-300 dark:bg-green-600 flex justify-center items-center py-2 space-x-4 hover:bg-green-500 dark:hover:bg-green-800`}
           >
             <img
               src={Object.values(skill.imageSrc)[0]}

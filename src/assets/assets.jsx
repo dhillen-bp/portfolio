@@ -28,11 +28,13 @@ import CloudArchitect from "./img/certificates/menjadi-google-cloud-architect.pn
 
 // Projects
 import ProjectSPKD from "./img/project/project-spkd.png";
+import ProjectSPKD2 from "./img/project/project-spkd-form-penilaian.png";
 import ProjectNBSiswa from "./img/project/nb-siswa.png";
 import ProjectIdekita from "./img/project/idekita.png";
 import ProjectMernBlog from "./img/project/project-mern-blog.png";
 import ProjectKenaMental from "./img/project/project-kenamental.png";
 import ProjectKenaMental2 from "./img/project/project-kenamental-mental-test.png";
+import ProjectKenaMental3 from "./img/project/project-kenamental-result-test.png";
 
 export {
   MyPhoto,
@@ -61,9 +63,11 @@ export {
   CloudArchitect,
   // Projects
   ProjectSPKD,
+  ProjectSPKD2,
   ProjectNBSiswa,
   ProjectIdekita,
   ProjectMernBlog,
   ProjectKenaMental,
   ProjectKenaMental2,
+  ProjectKenaMental3,
 };

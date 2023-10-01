@@ -6,6 +6,10 @@ export default function Education() {
   return (
     <HelmetProvider>
       <Helmet>
+        <meta
+          name="description"
+          content="My Portfolio|Explore my projects and skills."
+        />
         <title>Education</title>
       </Helmet>
 
@@ -25,7 +29,7 @@ export default function Education() {
                 <img src={AmikomSka} alt="Amikom-Surakarta-Photo" />
               </a>
             </div>
-            <div className="col-span-1 justify-center p-3 text-center">
+            <div className="col-span-1 justify-center p-3 text-center dark:text-slate-800">
               <p className="text-sm font-bold">STMIK AMIKOM SURAKARTA</p>
               <p className="text-sm font-semibold my-2">
                 Bachelor Degree in Informatics - S.Kom.

@@ -6,11 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
   ProjectSPKD,
+  ProjectSPKD2,
   ProjectNBSiswa,
   ProjectIdekita,
   ProjectMernBlog,
   ProjectKenaMental,
   ProjectKenaMental2,
+  ProjectKenaMental3,
 } from "../assets/assets";
 import CloseIcon from "@mui/icons-material/Close";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -29,7 +31,7 @@ const projects = [
   },
   {
     title: "Web-Based Lecturer Rating",
-    image: [ProjectSPKD],
+    image: [ProjectSPKD, ProjectSPKD2],
     techStack: ["Codeigniter", "MySQL"],
     link: "https://github.com/dhillen-bp/penilaian_dosen",
     desc: "Sistem Penilaian Kinerja Dosen atau SPKD adalah sistem yang dibuat untuk melakukan penilaian dosen dengan menghasilkan nilai (rating) tiap dosen dari kuesioner yang diisi oleh mahasiswa.",
@@ -52,7 +54,7 @@ const projects = [
   },
   {
     title: "Kena-Mental",
-    image: [ProjectKenaMental, ProjectKenaMental2],
+    image: [ProjectKenaMental, ProjectKenaMental2, ProjectKenaMental3],
     techStack: ["Laravel", "MySQL"],
     link: "https://github.com/dhillen-bp/kena-mental",
     demo: "https://kena-mental-bggatovnqa-et.a.run.app",
@@ -95,6 +97,10 @@ export default function Project() {
     <HelmetProvider>
       <div className="w-full">
         <Helmet>
+          <meta
+            name="description"
+            content="My Portfolio|Explore my projects and skills."
+          />
           <title>Project</title>
         </Helmet>
 
@@ -120,7 +126,9 @@ export default function Project() {
                 </div>
 
                 <div className="text-center py-2 flex flex-col items-center">
-                  <p className="font-bold my-2">{project.title}</p>
+                  <p className="font-bold my-2 dark:text-slate-800">
+                    {project.title}
+                  </p>
                   <div className="flex flex-row gap-3 items-center my-2 cursor-default">
                     {project.techStack.map((tech, techIndex) => (
                       <span
@@ -138,8 +146,8 @@ export default function Project() {
                       rel="noreferrer"
                       className="mx-2 hover:font-bold transform hover:scale-105 transition-transform"
                     >
-                      <span className="text-sm">Code</span>
-                      <CodeIcon />
+                      <span className="text-sm dark:text-slate-800">Code</span>
+                      <CodeIcon className="dark:text-slate-800" />
                     </a>
                     {project.demo && (
                       <a
@@ -148,8 +156,10 @@ export default function Project() {
                         rel="noreferrer"
                         className="mx-2 hover:font-bold transform hover:scale-105 transition-transform"
                       >
-                        <span className="text-sm">Demo</span>
-                        <LanguageIcon />
+                        <span className="text-sm dark:text-slate-800">
+                          Demo
+                        </span>
+                        <LanguageIcon className="dark:text-slate-800" />
                       </a>
                     )}
                   </div>
@@ -182,7 +192,7 @@ export default function Project() {
               overflowX: "hidden",
             },
           }}
-          className="project-modal bg-slate-50 focus:outline-0 md:min-w-[60vw]"
+          className="project-modal bg-slate-50 focus:outline-0 md:min-w-[60vw] dark:text-slate-800"
         >
           {selectedProjectIndex !== null && (
             <div className="text-center">
