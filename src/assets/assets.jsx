@@ -35,6 +35,12 @@ import ProjectMernBlog from "./img/project/project-mern-blog.png";
 import ProjectKenaMental from "./img/project/project-kenamental.png";
 import ProjectKenaMental2 from "./img/project/project-kenamental-mental-test.png";
 import ProjectKenaMental3 from "./img/project/project-kenamental-result-test.png";
+import ProjectSDMKU1 from "./img/project/project-sdmku-1.png";
+import ProjectSDMKU2 from "./img/project/project-sdmku-2.png";
+import BLTDD1 from "./img/project/BLT-DD-1.png";
+import BLTDD2 from "./img/project/BLT-DD-2.png";
+import BLTDD3 from "./img/project/BLT-DD-3.png";
+import BLTDD4 from "./img/project/BLT-DD-4.png";
 
 export {
   MyPhoto,
@@ -70,4 +76,10 @@ export {
   ProjectKenaMental,
   ProjectKenaMental2,
   ProjectKenaMental3,
+  ProjectSDMKU1,
+  ProjectSDMKU2,
+  BLTDD1,
+  BLTDD2,
+  BLTDD3,
+  BLTDD4,
 };

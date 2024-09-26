@@ -61,8 +61,7 @@ export default function Skills() {
       <div className="w-full grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 justify-around items-center">
         {skillsData.map((skill, index) => (
           <a
-            href={skill.link}
-            target="_blank"
+            href=""
             rel="noopener noreferrer"
             key={index}
             className={`cursor-pointer shadow-md rounded-md  h-[3.25rem] bg-green-300 dark:bg-green-600 flex justify-center items-center py-2 space-x-4 hover:bg-green-500 dark:hover:bg-green-800`}

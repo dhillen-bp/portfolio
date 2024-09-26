@@ -13,6 +13,12 @@ import {
   ProjectKenaMental,
   ProjectKenaMental2,
   ProjectKenaMental3,
+  ProjectSDMKU1,
+  ProjectSDMKU2,
+  BLTDD1,
+  BLTDD2,
+  BLTDD3,
+  BLTDD4,
 } from "../assets/assets";
 import CloseIcon from "@mui/icons-material/Close";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -59,6 +65,22 @@ const projects = [
     link: "https://github.com/dhillen-bp/kena-mental",
     demo: "https://kena-mental-bggatovnqa-et.a.run.app",
     desc: "Kena-Mental is a web platform created to simulate booking an online psychologist consultation. The platform is designed using Laravel, a powerful and efficient PHP framework. Through Kena-Mental, users can book a consultation with a psychologist online. The system enables users to choose a time according to their availability and select a psychologist that matches their needs.",
+  },
+  {
+    title: "Web Profil SD Muhammadiyah Klaten Utara",
+    image: [ProjectSDMKU1, ProjectSDMKU2],
+    techStack: ["Laravel", "MySQL"],
+    link: "https://github.com/dhillen-bp/web-sdmku",
+    demo: "https://sdmuhammadiyahklatenutara.sch.id",
+    desc: "SD Muhammadiyah Klaten Utara Profile Web is a web that shows information related to SD Muhammadiyah Klaten Utara school.",
+  },
+  {
+    title:
+      "Sistem Pendukung Keputusan Penentuan Penerima BLT Dana Desa dengan Metode AHP dan SAW",
+    image: [BLTDD1, BLTDD2, BLTDD3, BLTDD4],
+    techStack: ["Laravel", "MySQL"],
+    link: "https://github.com/dhillen-bp/spk-ahp-saw",
+    desc: "Sebuah aplikasi web yang dirancang untuk membantu pemerintah desa dalam menentukan penerima Bantuan Langsung Tunai (BLT) Dana Desa secara lebih objektif dan transparan. Sistem ini menggabungkan metode AHP (Analytic Hierarchy Process) dan SAW (Simple Additive Weighting) untuk mengevaluasi dan memberi peringkat calon penerima bantuan berdasarkan kriteria yang telah ditetapkan.",
   },
 ];
 

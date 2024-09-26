@@ -78,7 +78,7 @@ export default function Header() {
                 onClick={() => {
                   if (link.path === "Resume") {
                     window.open(
-                      "https://drive.google.com/file/d/12OJvq1nbcX82BgRIqQUckivsZt5tEuOd/view?usp=drive_link",
+                      "https://drive.google.com/file/d/1fWtaij2PKFDijHxFFXeabw4w7IghZY_a/view?usp=sharing",
                       "_blank"
                     );
                   } else {

@@ -35,7 +35,7 @@ export default function Education() {
                 Bachelor Degree in Informatics - S.Kom.
               </p>
               <p className="text-sm font-semibold">2020-Present</p>
-              <p className="text-sm font-bold my-2">3.95 GPA</p>
+              <p className="text-sm font-bold my-2">3.86 GPA</p>
             </div>
           </div>
         </div>
